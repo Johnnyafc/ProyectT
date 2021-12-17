@@ -6,44 +6,39 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    boolean presentar = false;
+    public ImageView imagen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        imagen = findViewById(R.id.CargandoIma);
         iniciarLogin(1);
     }
 
 
-    private void iniciarLogin(int segundos){
+    private void iniciarLogin(int segundos) {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                try{
-                  Thread.sleep(1000*segundos);
-                    Intent i= new Intent(getApplicationContext(),Login.class);
-                    startActivity(i);
-                }catch(InterruptedException e){
+                try {
+                    for(int i=0;i<255;i=i+10){
+                        Thread.sleep(100 * segundos);
+                        imagen.setImageAlpha(i);
+                    }
+                    Thread.sleep(1000 * segundos);
+                    Intent i1 = new Intent(getApplicationContext(), Login.class);
+                    startActivity(i1);
+                } catch (InterruptedException e) {
 
                 }
 
             }
         }).start();
-
-
-
-
-
-
     }
-    public void botonPrueba(View v){
-        Intent i= new Intent(getApplicationContext(),Login.class);
-        startActivity(i);
-    }
-
 }
 
 
