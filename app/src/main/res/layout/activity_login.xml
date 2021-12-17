@@ -22,6 +22,7 @@
         android:layout_width="307dp"
         android:layout_height="48dp"
         android:layout_marginBottom="64dp"
+        android:onClick="crearUsuario"
         android:text="Crear Usuario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

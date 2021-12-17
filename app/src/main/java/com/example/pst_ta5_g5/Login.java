@@ -14,7 +14,11 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 public void ingresar(View v){
-    Intent i= new Intent(getApplicationContext(),Login.class);
+    Intent i= new Intent(getApplicationContext(),PantallaPrincipal.class);
+    startActivity(i);
+}
+public  void crearUsuario(View v){
+    Intent i= new Intent(getApplicationContext(),CrearUsuario.class);
     startActivity(i);
 }
 }
