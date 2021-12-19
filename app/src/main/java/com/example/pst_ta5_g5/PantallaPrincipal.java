@@ -21,9 +21,7 @@ public class PantallaPrincipal extends AppCompatActivity {
         setContentView(R.layout.activity_pantalla_principal);
         this.setTitle("BUSQUEDA GENERAL");
     }
-    @Override
-    public void onBackPressed() {
-    }
+
     public  void cerrar(View v){
         Intent i= new Intent(getApplicationContext(),Login.class);
         startActivity(i);
