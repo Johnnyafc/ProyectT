@@ -30,4 +30,7 @@ public class MenuOpciones extends AppCompatActivity {
     public void perfil(View v){
 
     }
+    @Override
+    public void onBackPressed() {
+    }
 }
