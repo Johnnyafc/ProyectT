@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PST_TA5_G5">
         <activity
+            android:name=".MenuOpciones"
+            android:exported="true" />
+        <activity
             android:name=".CrearUsuario"
             android:exported="true" />
         <activity
