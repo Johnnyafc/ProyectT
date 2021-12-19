@@ -20,16 +20,13 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        this.setTitle("LOGIN");
         usuario=findViewById(R.id.editUsuario);
         contrasena=findViewById(R.id.editContraseña);
     }
 public void ingresar(View v){
-    System.out.println(usuario.getText());
-    System.out.println(USUARIO);
-    System.out.println(contrasena.getText());
-    System.out.println(CONTRASENA);
     if (usuario.getText().toString().equals(USUARIO) & contrasena.getText().toString().equals(CONTRASENA)) {
-        Intent i= new Intent(getApplicationContext(),PantallaPrincipal.class);
+        Intent i= new Intent(getApplicationContext(),MenuOpciones.class);
         startActivity(i);
     } else {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
