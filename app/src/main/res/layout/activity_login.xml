@@ -5,7 +5,7 @@
     android:id="@+id/Constrain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDFEFF"
+    android:background="#9CC6F1"
     tools:context=".Login">
 
     <ImageView

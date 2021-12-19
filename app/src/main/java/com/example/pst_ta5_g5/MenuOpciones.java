@@ -13,10 +13,15 @@ public class MenuOpciones extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_opciones);
+        this.setTitle("MENU DE OPCIONES");
 
     }
     public void BuscarGeneral(View v){
         Intent i= new Intent(getApplicationContext(),PantallaPrincipal.class);
+        startActivity(i);
+    }
+    public void cerrarSesion(View v){
+        Intent i= new Intent(getApplicationContext(),Login.class);
         startActivity(i);
     }
     public void buscarCate(View v){

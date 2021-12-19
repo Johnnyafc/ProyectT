@@ -20,6 +20,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        this.setTitle("LOGIN");
         usuario=findViewById(R.id.editUsuario);
         contrasena=findViewById(R.id.editContraseña);
     }

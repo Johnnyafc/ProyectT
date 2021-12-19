@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9CC6F1"
     tools:context=".MenuOpciones">
 
     <ImageView
@@ -12,7 +13,9 @@
         android:layout_height="227dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="64dp"
+        android:layout_marginEnd="10dp"
         android:onClick="BuscarGeneral"
+        app:layout_constraintEnd_toStartOf="@+id/imaCate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/busqueda_general" />
@@ -31,12 +34,29 @@
         android:id="@+id/imaPerfil"
         android:layout_width="197dp"
         android:layout_height="266dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginBottom="54dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imaCerrar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imaBusqueda"
+        app:layout_constraintVertical_bias="0.329"
         app:srcCompat="@drawable/perfilusuario" />
+
+    <ImageView
+        android:id="@+id/imaCerrar"
+        android:layout_width="214dp"
+        android:layout_height="297dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="54dp"
+        android:onClick="cerrarSesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imaCate"
+        app:layout_constraintVertical_bias="0.288"
+        app:srcCompat="@drawable/cerrar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
