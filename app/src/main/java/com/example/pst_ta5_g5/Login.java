@@ -10,12 +10,15 @@ import android.view.View;
 import android.widget.EditText;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 
 public class Login extends AppCompatActivity {
     private EditText usuario;
     private EditText contrasena;
   private  final  static String  USUARIO="administrador";
     private  final  static String  CONTRASENA="administrador";
+    private ArrayList<String> usuar= CrearUsuario.arrayUsu;
+    private ArrayList<String> contra=CrearUsuario.arrayPassword;
 
 
 
@@ -29,15 +32,27 @@ public class Login extends AppCompatActivity {
         contrasena=findViewById(R.id.editContraseña);
     }
 public void ingresar(View v){
-    if (usuario.getText().toString().equals(USUARIO) & contrasena.getText().toString().equals(CONTRASENA)) {
-        Intent i= new Intent(getApplicationContext(),MenuOpciones.class);
-        startActivity(i);
-    } else {
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        dialogBuilder.setMessage("Credenciales incorrectas");
-        dialogBuilder.setCancelable(true).setTitle("Alerta");
-        dialogBuilder.create().show();
-    }
+        boolean contrac=false;
+        boolean usuari=false;
+        for(String s: usuar){
+         if(s.equals(usuario.getText().toString())){
+             contrac=true;
+             for(String c: contra){
+                 if(c.equals(contrasena.getText().toString())){
+                     usuari=true;
+                     Intent i= new Intent(getApplicationContext(),MenuOpciones.class);
+                     startActivity(i);
+                 }
+
+             }
+         }
+        }
+        if(!(contrac & usuari)){
+            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
+            dialogBuilder.setMessage("Credenciales incorrectas");
+            dialogBuilder.setCancelable(true).setTitle("Alerta");
+            dialogBuilder.create().show();
+        }
 }
     @Override
     public void onBackPressed() { }
