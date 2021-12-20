@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CrearUsuario extends AppCompatActivity {
@@ -17,12 +18,12 @@ public class CrearUsuario extends AppCompatActivity {
     private EditText editPassword;
     private EditText editUsu;
     private EditText editCorreo;
-    public ArrayList<String> arrayNombres=new ArrayList<String>();
-    public ArrayList<String> arrayApellidos=new ArrayList<String>();
-    public ArrayList<String> arrayTetxtPhone=new ArrayList<String>();
-    public ArrayList<String> arrayPassword=new ArrayList<String>();
-    public ArrayList<String> arrayUsu=new ArrayList<String>();
-    public ArrayList<String> arrayCorreo=new ArrayList<String>();
+    public static ArrayList<String> arrayNombres=new ArrayList<String>(Arrays.asList("Johnny Alexander", "Cristhian James", "Hernan segundo", "Isaac Ronaldo"));
+    public static ArrayList<String> arrayApellidos=new ArrayList<String>(Arrays.asList("Flores Cedeño", "Noriega Ramirez", "Campos Guzman", "Garcia Alvarez"));
+    public static ArrayList<String> arrayTetxtPhone=new ArrayList<String>(Arrays.asList("0994841901", "0999999991", "0999999992", "0999999993"));
+    public static ArrayList<String> arrayPassword=new ArrayList<String>(Arrays.asList("1234", "administrador2", "administrador3", "administrador4"));
+    public static ArrayList<String> arrayUsu=new ArrayList<String>(Arrays.asList("johnny", "cristhian", "hernan", "isaac"));
+    public static ArrayList<String> arrayCorreo=new ArrayList<String>(Arrays.asList("Correo1", "Correo2", "Correo3", "Correo4"));
 
 
 
@@ -61,8 +62,5 @@ public class CrearUsuario extends AppCompatActivity {
 
         Intent i= new Intent(getApplicationContext(),Login.class);
         startActivity(i);
-
-
-
     }
 }
