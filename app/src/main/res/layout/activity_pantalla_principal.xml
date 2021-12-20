@@ -4,119 +4,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/noche1"
+    android:background="#9CC6F1"
     tools:context=".PantallaPrincipal">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editNombre"
         android:layout_width="301dp"
         android:layout_height="40dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Busqueda de libro"
         android:inputType="textPersonName"
-        android:textColorHint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/crepusculo"
         android:layout_width="146dp"
         android:layout_height="180dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre"
         app:srcCompat="@drawable/crepusculo" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/txtCre"
         android:layout_width="140dp"
         android:layout_height="22dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:text="Crepusculo "
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toEndOf="@+id/crepusculo"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/txtNarnia"
         android:layout_width="140dp"
         android:layout_height="22dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="200dp"
-        android:text="Las crónicas de Narnia"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        android:text="Narnia"
+        app:layout_constraintStart_toEndOf="@+id/narnia"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/txtGuerra"
         android:layout_width="140dp"
         android:layout_height="22dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="424dp"
-        android:text="Guerra Mundial Z"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        android:text="Narnia"
+        app:layout_constraintStart_toEndOf="@+id/guerra"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/txtDesCre"
         android:layout_width="155dp"
         android:layout_height="125dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
-        android:text="Autor: Stephenie Meyer"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        android:text="Descripcion del libro"
+        app:layout_constraintStart_toEndOf="@+id/crepusculo"
+        app:layout_constraintTop_toBottomOf="@+id/txtCre" />
 
     <TextView
-        android:id="@+id/textView17"
-        android:layout_width="150dp"
-        android:layout_height="18dp"
+        android:id="@+id/txtDesGuerra"
+        android:layout_width="151dp"
+        android:layout_height="171dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
-        android:text="Autor: Max Brooks"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        android:text="Descripcion del libro"
+        app:layout_constraintStart_toEndOf="@+id/guerra"
+        app:layout_constraintTop_toBottomOf="@+id/txtGuerra" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/txtDescrNar"
         android:layout_width="160dp"
         android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
-        android:text="Autor: C. S. Lewis"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        android:text="Descripcion del libro"
+        app:layout_constraintStart_toEndOf="@+id/narnia"
+        app:layout_constraintTop_toBottomOf="@+id/txtNarnia" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/narnia"
         android:layout_width="146dp"
         android:layout_height="210dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/crepusculo"
         app:srcCompat="@drawable/narnia" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/guerra"
         android:layout_width="145dp"
         android:layout_height="206dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/narnia"
         app:srcCompat="@drawable/guerra" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

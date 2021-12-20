@@ -30,7 +30,7 @@ public void ingresar(View v){
         startActivity(i);
     } else {
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-        dialogBuilder.setMessage("Credenciles incorrectas");
+        dialogBuilder.setMessage("Credenciales incorrectas");
         dialogBuilder.setCancelable(true).setTitle("Alerta");
         dialogBuilder.create().show();
     }
