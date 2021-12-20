@@ -14,8 +14,12 @@ import java.sql.SQLOutput;
 public class Login extends AppCompatActivity {
     private EditText usuario;
     private EditText contrasena;
-    private  final  static String  USUARIO="administrador";
+  private  final  static String  USUARIO="administrador";
     private  final  static String  CONTRASENA="administrador";
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
