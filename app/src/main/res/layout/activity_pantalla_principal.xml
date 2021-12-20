@@ -8,7 +8,7 @@
     tools:context=".PantallaPrincipal">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editNombre"
         android:layout_width="301dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -20,13 +20,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/crepusculo"
         android:layout_width="146dp"
         android:layout_height="180dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre"
         app:srcCompat="@drawable/crepusculo" />
 
     <TextView
@@ -36,8 +36,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:text="Crepusculo "
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toEndOf="@+id/crepusculo"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre" />
 
     <TextView
         android:id="@+id/textView16"
@@ -46,8 +46,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="200dp"
         android:text="Narnia"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toEndOf="@+id/narnia"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre" />
 
     <TextView
         android:id="@+id/textView18"
@@ -56,8 +56,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="424dp"
         android:text="Narnia"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toEndOf="@+id/guerra"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre" />
 
     <TextView
         android:id="@+id/textView15"
@@ -66,7 +66,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:text="Descripcion del libro"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/crepusculo"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
@@ -76,7 +76,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:text="Descripcion del libro"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/guerra"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
@@ -86,27 +86,27 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:text="Descripcion del libro"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/narnia"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/narnia"
         android:layout_width="146dp"
         android:layout_height="210dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/crepusculo"
         app:srcCompat="@drawable/narnia" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/guerra"
         android:layout_width="145dp"
         android:layout_height="206dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/narnia"
         app:srcCompat="@drawable/guerra" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
