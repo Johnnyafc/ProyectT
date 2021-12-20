@@ -2,7 +2,9 @@ package com.example.pst_ta5_g5;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class BusquedaCategoria extends AppCompatActivity {
 
@@ -10,5 +12,9 @@ public class BusquedaCategoria extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_busqueda_categoria);
+    }
+    public void ficcion(View v){
+        Intent i= new Intent(getApplicationContext(), Categoris.class);
+        startActivity(i);
     }
 }
