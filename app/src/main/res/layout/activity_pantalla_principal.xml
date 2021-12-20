@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/crepusculo" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/txtCre"
         android:layout_width="140dp"
         android:layout_height="22dp"
         android:layout_marginStart="36dp"
@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editNombre" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/txtNarnia"
         android:layout_width="140dp"
         android:layout_height="22dp"
         android:layout_marginStart="36dp"
@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editNombre" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/txtGuerra"
         android:layout_width="140dp"
         android:layout_height="22dp"
         android:layout_marginStart="36dp"
@@ -60,34 +60,34 @@
         app:layout_constraintTop_toBottomOf="@+id/editNombre" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/txtDesCre"
         android:layout_width="155dp"
         android:layout_height="125dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:text="Descripcion del libro"
         app:layout_constraintStart_toEndOf="@+id/crepusculo"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCre" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/txtDesGuerra"
         android:layout_width="151dp"
         android:layout_height="171dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:text="Descripcion del libro"
         app:layout_constraintStart_toEndOf="@+id/guerra"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/txtGuerra" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/txtDescrNar"
         android:layout_width="160dp"
         android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:text="Descripcion del libro"
         app:layout_constraintStart_toEndOf="@+id/narnia"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNarnia" />
 
     <ImageView
         android:id="@+id/narnia"
