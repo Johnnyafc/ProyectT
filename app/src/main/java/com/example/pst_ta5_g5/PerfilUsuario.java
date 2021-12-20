@@ -16,9 +16,11 @@ public class PerfilUsuario extends AppCompatActivity {
         setContentView(R.layout.activity_perfil_usuario);
 
     }
-
+    @Override
+    public void onBackPressed() { }
     public void salir(View v){
         Intent i= new Intent(getApplicationContext(),MenuOpciones.class);
         startActivity(i);    }
+
 
 }

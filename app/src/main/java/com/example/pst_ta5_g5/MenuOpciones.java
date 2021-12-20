@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 
 public class MenuOpciones extends AppCompatActivity {
 
@@ -25,7 +24,7 @@ public class MenuOpciones extends AppCompatActivity {
         startActivity(i);
     }
     public void buscarCate(View v){
-        Intent i= new Intent(getApplicationContext(),BusquedaCategoria.class);
+        Intent i= new Intent(getApplicationContext(), Categoris.class);
         startActivity(i);
     }
     public void perfil(View v){

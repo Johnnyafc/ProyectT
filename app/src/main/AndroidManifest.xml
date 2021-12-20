@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PST_TA5_G5">
         <activity
+            android:name=".Categoris"
+            android:exported="true" />
+        <activity
             android:name=".BusquedaCategoria"
             android:exported="true" />
         <activity
