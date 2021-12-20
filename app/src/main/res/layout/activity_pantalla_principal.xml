@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9CC6F1"
+    android:background="@drawable/noche1"
     tools:context=".PantallaPrincipal">
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="301dp"
         android:layout_height="40dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Busqueda de libro"
         android:inputType="textPersonName"
+        android:textColorHint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +24,7 @@
         android:id="@+id/imageView7"
         android:layout_width="146dp"
         android:layout_height="180dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
@@ -36,6 +37,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:text="Crepusculo "
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
@@ -45,7 +48,9 @@
         android:layout_height="22dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="200dp"
-        android:text="Narnia"
+        android:text="Las crónicas de Narnia"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
@@ -55,7 +60,9 @@
         android:layout_height="22dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="424dp"
-        android:text="Narnia"
+        android:text="Guerra Mundial Z"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
@@ -65,17 +72,19 @@
         android:layout_height="125dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
-        android:text="Descripcion del libro"
+        android:text="Autor: Stephenie Meyer"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="151dp"
-        android:layout_height="171dp"
+        android:layout_width="150dp"
+        android:layout_height="18dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
-        android:text="Descripcion del libro"
+        android:text="Autor: Max Brooks"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -85,7 +94,8 @@
         android:layout_height="151dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
-        android:text="Descripcion del libro"
+        android:text="Autor: C. S. Lewis"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -93,7 +103,7 @@
         android:id="@+id/imageView8"
         android:layout_width="146dp"
         android:layout_height="210dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
@@ -103,7 +113,7 @@
         android:id="@+id/imageView9"
         android:layout_width="145dp"
         android:layout_height="206dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8"
