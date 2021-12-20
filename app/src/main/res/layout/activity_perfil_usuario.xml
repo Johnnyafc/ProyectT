@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#13C4DA"
-    android:backgroundTint="#5B8D93"
+    android:background="@drawable/noche4"
     tools:context=".PerfilUsuario"
     tools:layout_editor_absoluteX="-104dp"
     tools:layout_editor_absoluteY="55dp">
@@ -18,6 +17,7 @@
         android:layout_marginTop="27dp"
         android:layout_marginEnd="50dp"
         android:text="100 años de soledad"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -31,6 +31,7 @@
         android:layout_marginTop="27dp"
         android:layout_marginEnd="50dp"
         android:text="0994841901"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -44,6 +45,7 @@
         android:layout_marginTop="27dp"
         android:layout_marginEnd="50dp"
         android:text="johnfced@espol.edu.ec"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -57,6 +59,7 @@
         android:layout_marginTop="27dp"
         android:layout_marginEnd="50dp"
         android:text="Flores Cedeño "
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -69,6 +72,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="27dp"
         android:text="Libro Favorito: "
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -80,6 +84,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="27dp"
         android:text=" Celular: "
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -91,6 +96,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="27dp"
         android:text="Correo: "
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -102,6 +108,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="27dp"
         android:text="Apellidos: "
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -114,7 +121,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/usuario1" />
+        app:srcCompat="@drawable/icono" />
 
     <TextView
         android:id="@+id/textView3"
@@ -123,6 +130,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="258dp"
         android:text="Nombres: "
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -135,6 +143,7 @@
         android:layout_marginTop="96dp"
         android:layout_marginEnd="50dp"
         android:text="Johnny Alexander"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -145,6 +154,7 @@
         android:layout_width="60dp"
         android:layout_height="19dp"
         android:text="Johnfc14"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
