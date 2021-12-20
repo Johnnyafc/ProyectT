@@ -18,11 +18,11 @@ public class CrearUsuario extends AppCompatActivity {
     private EditText editPassword;
     private EditText editUsu;
     private EditText editCorreo;
-    public static ArrayList<String> arrayNombres=new ArrayList<String>(Arrays.asList("Johnny Alexander", "Cristhian James", "Hernan segundo", "Isaac Ronaldo"));
+    public static ArrayList<String> arrayNombres=new ArrayList<String>(Arrays.asList("Johnny Alexander", "Christian James", "Hernan segundo", "Isaac Ronaldo"));
     public static ArrayList<String> arrayApellidos=new ArrayList<String>(Arrays.asList("Flores Cedeño", "Noriega Ramirez", "Campos Guzman", "Garcia Alvarez"));
     public static ArrayList<String> arrayTetxtPhone=new ArrayList<String>(Arrays.asList("0994841901", "0999999991", "0999999992", "0999999993"));
     public static ArrayList<String> arrayPassword=new ArrayList<String>(Arrays.asList("1234", "administrador2", "administrador3", "administrador4"));
-    public static ArrayList<String> arrayUsu=new ArrayList<String>(Arrays.asList("johnny", "cristhian", "hernan", "isaac"));
+    public static ArrayList<String> arrayUsu=new ArrayList<String>(Arrays.asList("johnny", "christian", "hernan", "isaac"));
     public static ArrayList<String> arrayCorreo=new ArrayList<String>(Arrays.asList("Correo1", "Correo2", "Correo3", "Correo4"));
 
 

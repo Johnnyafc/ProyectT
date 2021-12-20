@@ -13,9 +13,6 @@
             android:name=".Categoris"
             android:exported="true" />
         <activity
-            android:name=".BusquedaCategoria"
-            android:exported="true" />
-        <activity
             android:name=".PerfilUsuario"
             android:exported="false" />
         <activity

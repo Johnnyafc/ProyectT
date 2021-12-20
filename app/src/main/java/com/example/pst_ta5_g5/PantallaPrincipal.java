@@ -46,9 +46,9 @@ public class PantallaPrincipal extends AppCompatActivity {
     public void crearArchivo(){
         try {
             OutputStreamWriter fout = new OutputStreamWriter(openFileOutput("Libros.txt", Context.MODE_PRIVATE));
-            fout.write("crepusculo,ficcion,Clive Staples Lewis,2008,crepusculo,txtCre,txtDesCre\n" +
-                    "narnia,ficcion,george raymond richard martin,2011,narnia,txtNarnia,txtDescrNar\n" +
-                    "guerra mundial z,terror,Maximillian Michael Brooks,2005,guerra,txtGuerra,txtDesGuerra\n");
+            fout.write("Crepusculo,Romance,Stephenie Meyer,2005,Crepusculo,txtCre,txtDesCre\n" +
+                    "Narnia,Ficcion,Clive Staples Lewis,1956,Narnia,txtNarnia,txtDescrNar\n" +
+                    "Guerra mundial z,Terror,Maximillian Michael Brooks,2006,guerra,txtGuerra,txtDesGuerra\n");
             fout.close();
         } catch(Exception ex) {
             Log.e("Ficheros", "Error al escribir fichero a memoria interna");
@@ -83,9 +83,9 @@ public class PantallaPrincipal extends AppCompatActivity {
                 }
             }
         } catch (FileNotFoundException e) {
-            System.out.println("problemas en el archivo");
+            System.out.println("Problemas en el archivo");
         } catch (IOException e) {
-            System.out.println("problemas al subir");
+            System.out.println("Problemas al subir");
         }
         return li;
     }
@@ -112,7 +112,7 @@ public class PantallaPrincipal extends AppCompatActivity {
                     for (Libro l : libros) {
                         if (libros.size() > 0) {
                             ImageView image = new ImageView(this);
-                            if (nombre.getText().toString().equals("narnia")) {
+                            if (nombre.getText().toString().equals("Nrnia")) {
                                 image.setImageResource(R.drawable.narnia);
                                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
                                 dialogBuilder.setMessage("Nombre: " + l.getNombre() + "\nCategoria: " + l.getGenero() + "\nAutor: " + l.getAutor() + "\nAño:" + l.getYear());
@@ -120,7 +120,7 @@ public class PantallaPrincipal extends AppCompatActivity {
                                 image.setPadding(200, 20, 200, 20);
                                 dialogBuilder.setView(image);
                                 dialogBuilder.create().show();
-                            } else if (nombre.getText().toString().equals("crepusculo")) {
+                            } else if (nombre.getText().toString().equals("Crepusculo")) {
                                 image.setImageResource(R.drawable.crepusculo);
                                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
                                 dialogBuilder.setMessage("Nombre: " + l.getNombre() + "\nCategoria: " + l.getGenero() + "\nAutor: " + l.getAutor() + "\nAño:" + l.getYear());
@@ -128,7 +128,7 @@ public class PantallaPrincipal extends AppCompatActivity {
                                 image.setPadding(200, 20, 200, 20);
                                 dialogBuilder.setView(image);
                                 dialogBuilder.create().show();
-                            } else if (nombre.getText().toString().equals("guerra mundial z")) {
+                            } else if (nombre.getText().toString().equals("Guerra mundial z")) {
                                 image.setImageResource(R.drawable.guerra);
                                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
                                 dialogBuilder.setMessage("Nombre: " + l.getNombre() + "\nCategoria: " + l.getGenero() + "\nAutor: " + l.getAutor() + "\nAño:" + l.getYear());
@@ -148,21 +148,21 @@ public class PantallaPrincipal extends AppCompatActivity {
         }
 
     public void descripcionNarnia(View v){
-        ArrayList<Libro> l= cargarDatosNombre("narnia");
+        ArrayList<Libro> l= cargarDatosNombre("Narnia");
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         dialogBuilder.setMessage("Nombre: "+l.get(0).getNombre()+"\nCategoria: "+l.get(0).getGenero()+"\nAutor: "+l.get(0).getAutor()+"\nAño:"+l.get(0).getYear());
         dialogBuilder.setCancelable(true).setTitle("Descripcion");
         dialogBuilder.create().show();
     }
     public void descripcionGuerra(View v){
-        ArrayList<Libro> l= cargarDatosNombre("guerra mundial z");
+        ArrayList<Libro> l= cargarDatosNombre("Guerra mundial z");
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         dialogBuilder.setMessage("Nombre: "+l.get(0).getNombre()+"\nCategoria: "+l.get(0).getGenero()+"\nAutor: "+l.get(0).getAutor()+"\nAño:"+l.get(0).getYear());
         dialogBuilder.setCancelable(true).setTitle("Descripcion");
         dialogBuilder.create().show();
     }
     public void descripcionCrepusculo(View v){
-        ArrayList<Libro> l= cargarDatosNombre("crepusculo");
+        ArrayList<Libro> l= cargarDatosNombre("Crepusculo");
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         dialogBuilder.setMessage("Nombre: "+l.get(0).getNombre()+"\nCategoria: "+l.get(0).getGenero()+"\nAutor: "+l.get(0).getAutor()+"\nAño:"+l.get(0).getYear());
         dialogBuilder.setCancelable(true).setTitle("Descripcion");

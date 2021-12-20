@@ -15,8 +15,8 @@ import java.util.ArrayList;
 public class Login extends AppCompatActivity {
     private EditText usuario;
     private EditText contrasena;
-  private  final  static String  USUARIO="administrador";
-    private  final  static String  CONTRASENA="administrador";
+  //private  final  static String  USUARIO="administrador";
+    //private  final  static String  CONTRASENA="administrador";
     private ArrayList<String> usuar= CrearUsuario.arrayUsu;
     private ArrayList<String> contra=CrearUsuario.arrayPassword;
 

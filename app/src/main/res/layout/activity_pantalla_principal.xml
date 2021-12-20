@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9CC6F1"
+    android:background="@drawable/noche6"
     tools:context=".PantallaPrincipal">
 
     <ScrollView
         android:layout_width="417dp"
         android:layout_height="743dp"
         tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="-3dp">
+        tools:layout_editor_absoluteY="-6dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,12 +23,13 @@
             <EditText
                 android:id="@+id/editNombre"
                 android:layout_width="301dp"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="32dp"
                 android:ems="10"
                 android:hint="Busqueda de libro"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textColorHint="@color/white" />
 
             <ImageView
                 android:id="@+id/narn"
@@ -37,7 +38,8 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="32dp"
                 android:onClick="descripcionNarnia"
-                app:srcCompat="@drawable/narnia" />
+                app:srcCompat="@drawable/narnia"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageView
                 android:id="@+id/guerra"
@@ -46,7 +48,8 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="32dp"
                 android:onClick="descripcionGuerra"
-                app:srcCompat="@drawable/guerra" />
+                app:srcCompat="@drawable/guerra"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <ImageView
                 android:id="@+id/crepusculo"
@@ -55,7 +58,8 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="32dp"
                 android:onClick="descripcionCrepusculo"
-                app:srcCompat="@drawable/crepusculo" />
+                app:srcCompat="@drawable/crepusculo"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
     </ScrollView>

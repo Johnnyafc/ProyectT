@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9CC6F1"
+    android:background="@drawable/noche5"
     tools:context=".Categoris">
 
     <ScrollView
@@ -27,8 +27,9 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="32dp"
                 android:ems="10"
-                android:hint="Libros por categoria"
-                android:inputType="textPersonName" />
+                android:hint="Buscar libros por categoría"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/white" />
 
             <ImageView
                 android:id="@+id/narn"

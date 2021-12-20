@@ -153,7 +153,7 @@
         android:id="@+id/textView24"
         android:layout_width="60dp"
         android:layout_height="19dp"
-        android:text="Johnfc14"
+        android:text="johnny"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView4"

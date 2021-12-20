@@ -5,7 +5,7 @@
     android:id="@+id/Constrain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wallpaper1"
+    android:background="@drawable/noche7"
     tools:context=".Login">
 
     <ImageView
@@ -73,9 +73,10 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
         android:ems="10"
+        android:hint="Escriba su usuario"
         android:inputType="textPersonName"
-        android:text="administrador"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,9 +102,10 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
         android:ems="10"
+        android:hint="Escriba su contraseña"
         android:inputType="textPassword"
-        android:text="administrador"
         android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

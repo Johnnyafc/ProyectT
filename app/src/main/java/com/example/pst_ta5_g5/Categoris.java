@@ -31,7 +31,7 @@ public class Categoris extends AppCompatActivity {
     }
 
     public void narnia(View v) {
-        ArrayList<Libro> l = cargarDatosNombre("narnia");
+        ArrayList<Libro> l = cargarDatosNombre("Narnia");
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         dialogBuilder.setMessage("Nombre: " + l.get(0).getNombre() + "\nCategoria: " + l.get(0).getGenero() + "\nAutor: " + l.get(0).getAutor() + "\nAño:" + l.get(0).getYear());
         dialogBuilder.setCancelable(true).setTitle("Descripcion");
@@ -39,7 +39,7 @@ public class Categoris extends AppCompatActivity {
     }
 
     public void guerra(View v) {
-        ArrayList<Libro> l = cargarDatosNombre("guerra mundial z");
+        ArrayList<Libro> l = cargarDatosNombre("Guerra mundial z");
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         dialogBuilder.setMessage("Nombre: " + l.get(0).getNombre() + "\nCategoria: " + l.get(0).getGenero() + "\nAutor: " + l.get(0).getAutor() + "\nAño:" + l.get(0).getYear());
         dialogBuilder.setCancelable(true).setTitle("Descripcion");
@@ -47,7 +47,7 @@ public class Categoris extends AppCompatActivity {
     }
 
     public void descrepusculo(View view) {
-        ArrayList<Libro> l = cargarDatosNombre("crepusculo");
+        ArrayList<Libro> l = cargarDatosNombre("Crepusculo");
         AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
         dialogBuilder.setMessage("Nombre: " + l.get(0).getNombre() + "\nCategoria: " + l.get(0).getGenero() + "\nAutor: " + l.get(0).getAutor() + "\nAño:" + l.get(0).getYear());
         dialogBuilder.setCancelable(true).setTitle("Descripcion");
