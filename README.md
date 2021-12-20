@@ -1,5 +1,3 @@
-# PST_TA5_G-5-
-f
-oinonononooboobobobobobobobobobobobobobo
+# PST_TA7_G5
 
-sholololololoolol
+Trabajo autónomo 7 de PST.
