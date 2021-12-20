@@ -28,7 +28,8 @@ public class MenuOpciones extends AppCompatActivity {
 
     }
     public void perfil(View v){
-
+        Intent i= new Intent(getApplicationContext(),PerfilUsuario.class);
+        startActivity(i);
     }
     @Override
     public void onBackPressed() {
