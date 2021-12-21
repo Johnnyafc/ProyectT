@@ -92,10 +92,10 @@ public class Categoris extends AppCompatActivity {
                     dialogBuilder.create().show();
                     ficcion.setText("");
                 }
-                ArrayList<View> vista = new ArrayList<>();
                 for (Libro l : libros) {
                     if (l != null) {
-                        if (ficcion.getText().toString().equals("ficcion")) {
+                        System.out.println("estoy dentro de For");
+                        if (ficcion.getText().toString().equals("Ficcion")) {
                             hayLibro = true;
                             ImageView image1 = new ImageView(this);
                             image1.setImageResource(R.drawable.narnia);
@@ -105,7 +105,7 @@ public class Categoris extends AppCompatActivity {
                             image1.setPadding(200, 20, 200, 20);
                             dialogBuilder1.setView(image1);
                             dialogBuilder1.create().show();
-                        } else if (ficcion.getText().toString().equals("ficcion") & hayLibro) {
+                        } else if (ficcion.getText().toString().equals("Ficcion") & hayLibro) {
                             ImageView image0 = new ImageView(this);
                             image0.setImageResource(R.drawable.crepussculo);
                             AlertDialog.Builder dialogBuilder0 = new AlertDialog.Builder(this);
@@ -114,7 +114,7 @@ public class Categoris extends AppCompatActivity {
                             image0.setPadding(200, 20, 200, 20);
                             dialogBuilder0.setView(image0);
                             dialogBuilder0.create().show();
-                        } else if (ficcion.getText().toString().equals("terror")) {
+                        } else if (ficcion.getText().toString().equals("Terror")) {
                             ImageView image2 = new ImageView(this);
                             image2.setImageResource(R.drawable.guerra);
                             AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
