@@ -29,6 +29,7 @@
                 android:ems="10"
                 android:hint="Busqueda de libro"
                 android:inputType="textPersonName"
+                android:textColor="@color/white"
                 android:textColorHint="@color/white" />
 
             <ImageView
