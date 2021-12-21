@@ -105,7 +105,7 @@ public class Categoris extends AppCompatActivity {
                             image1.setPadding(200, 20, 200, 20);
                             dialogBuilder1.setView(image1);
                             dialogBuilder1.create().show();
-                        } else if (ficcion.getText().toString().equals("Ficcion") & hayLibro) {
+                        } else if (ficcion.getText().toString().equals("Romance") & hayLibro) {
                             ImageView image0 = new ImageView(this);
                             image0.setImageResource(R.drawable.crepussculo);
                             AlertDialog.Builder dialogBuilder0 = new AlertDialog.Builder(this);
