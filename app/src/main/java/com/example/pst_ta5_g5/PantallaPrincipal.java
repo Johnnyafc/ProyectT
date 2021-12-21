@@ -32,13 +32,9 @@ public class PantallaPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_principal);
         nombre= findViewById(R.id.editNombre);
-        crepusculo=findViewById(R.id.narn);
-        narnia=findViewById(R.id.guerra);
+        crepusculo=findViewById(R.id.crepusculo);
+        narnia=findViewById(R.id.narn);
         guerra=findViewById(R.id.guerra);
-        imagenes= new ArrayList<>();
-        imagenes.add(crepusculo);
-        imagenes.add(narnia);
-        imagenes.add(guerra);
 
         this.setTitle("BUSQUEDA GENERAL");
     }
@@ -112,7 +108,7 @@ public class PantallaPrincipal extends AppCompatActivity {
                     for (Libro l : libros) {
                         if (libros.size() > 0) {
                             ImageView image = new ImageView(this);
-                            if (nombre.getText().toString().equals("Nrnia")) {
+                            if (nombre.getText().toString().equals("Narnia")) {
                                 image.setImageResource(R.drawable.narnia);
                                 AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
                                 dialogBuilder.setMessage("Nombre: " + l.getNombre() + "\nCategoria: " + l.getGenero() + "\nAutor: " + l.getAutor() + "\nAño:" + l.getYear());
