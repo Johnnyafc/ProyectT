@@ -32,36 +32,6 @@
                 android:textColor="@color/white"
                 android:textColorHint="@color/white" />
 
-            <ImageView
-                android:id="@+id/narn"
-                android:layout_width="170dp"
-                android:layout_height="240dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="32dp"
-                android:onClick="descripcionNarnia"
-                app:srcCompat="@drawable/narnia"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <ImageView
-                android:id="@+id/guerra"
-                android:layout_width="161dp"
-                android:layout_height="240dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="32dp"
-                android:onClick="descripcionGuerra"
-                app:srcCompat="@drawable/guerra"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <ImageView
-                android:id="@+id/crepusculo"
-                android:layout_width="158dp"
-                android:layout_height="240dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="32dp"
-                android:onClick="descripcionCrepusculo"
-                app:srcCompat="@drawable/crepusculo"
-                tools:ignore="SpeakableTextPresentCheck" />
-
         </LinearLayout>
     </ScrollView>
 

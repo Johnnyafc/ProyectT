@@ -16,7 +16,7 @@ public class MenuOpciones extends AppCompatActivity {
 
     }
     public void BuscarGeneral(View v){
-        Intent i= new Intent(getApplicationContext(),PantallaPrincipal.class);
+        Intent i= new Intent(getApplicationContext(),DistanciaRecorrida.class);
         startActivity(i);
     }
     public void cerrarSesion(View v){

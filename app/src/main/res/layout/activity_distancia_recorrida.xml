@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DistanciaRecorrida">
+
+    <LinearLayout
+        android:id="@+id/ContenedorPrincipal"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Button
+            android:id="@+id/btnTiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="250dp"
+
+            android:layout_marginRight="10dp"
+
+            android:layout_marginBottom="10dp"
+            android:onClick="iniciarPorTiempo"
+            android:text="Iniciar por tiempo " />
+
+        <Button
+            android:id="@+id/btnDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="iniciarPorDistancia"
+            android:text="Iniciar por distancia" />
+
+        <Button
+            android:id="@+id/btnPersonalizado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="personalizado"
+            android:text="Personalizado" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="registros"
+            android:text="Registros" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
