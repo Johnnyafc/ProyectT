@@ -28,6 +28,7 @@ public class DistanciaRecorrida extends AppCompatActivity implements OnMapReadyC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_distancia_recorrida);
         contenedor= findViewById(R.id.ContenedorPrincipal);
+        this.setTitle("Distancia");
     }
     @Override
     public void onMapReady(GoogleMap googleMap) {
