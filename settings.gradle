@@ -6,5 +6,5 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "PST_TA5_G5"
+rootProject.name = "ProyectoTele"
 include ':app'
