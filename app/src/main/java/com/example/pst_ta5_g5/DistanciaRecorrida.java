@@ -260,7 +260,7 @@ tiempo1=0;
                                     System.out.println("salio while"+locationf.getLatitude());
                                     ubicacionFinal= new Ubicacion(locationf.getLatitude(),locationf.getLongitude());
                                     double distancia=Ubicacion.calcularDistancia(ubicacionInicial,ubicacionFinal);
-                                    enviarAlertaDistancia("Usted ha recorrido:"+distancia+" Km");
+                                    enviarAlertaDistancia("Usted ha recorrido:"+distancia+" m");
                                     iniciar.setText("INICIAR");
                                 }
                             }
