@@ -5,21 +5,8 @@
     android:id="@+id/Constrain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/noche7"
+    android:background="@drawable/fondo_serio_3"
     tools:context=".Login">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="290dp"
-        android:layout_height="344dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logocel" />
 
     <Button
         android:id="@+id/btnIngresar"
@@ -27,7 +14,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="70dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#03243E"
         android:onClick="ingresar"
         android:text="INGRESAR"
         android:textColor="@color/white"
@@ -44,7 +31,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="64dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#03243E"
         android:onClick="crearUsuario"
         android:text="Crear Usuario"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,7 +47,7 @@
         android:layout_marginTop="220dp"
         android:backgroundTint="#2D1ADA"
         android:text="Usuario:"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,15 +55,15 @@
 
     <EditText
         android:id="@+id/editUsuario"
-        android:layout_width="355dp"
+        android:layout_width="339dp"
         android:layout_height="58dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="Escriba su usuario"
+        android:hint="Ingrese usuario"
         android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,9 +74,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:text="Contraseña:"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,13 +89,24 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="Escriba su contraseña"
+        android:hint="Ingrese contraseña"
         android:inputType="textPassword"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="156dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_espol" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
