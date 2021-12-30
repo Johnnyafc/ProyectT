@@ -16,8 +16,8 @@ public class Ubicacion {
                 Math.cos(Math.toRadians(destino.latitud))*
                 Math.pow(Math.sin(Math.toRadians(dlong)/2),2);
                 double c=2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
-        double distancia=radioTierra*c;
-        return distancia;
+        double distancia=  (radioTierra*c);
+        return distancia*1000;
     }
     public double getLatitud(){
         return  latitud;
