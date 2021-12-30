@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/noche4"
+    android:background="@drawable/tr1"
     tools:context=".PerfilUsuario"
     tools:layout_editor_absoluteX="-104dp"
     tools:layout_editor_absoluteY="55dp">
