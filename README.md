@@ -1,3 +1,4 @@
-# PST_TA7_G5
+# Proyecto G5
 
-Trabajo autónomo 7 de PST.
+Aplicación Wearble Deportivo
+

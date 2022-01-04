@@ -1,4 +1,4 @@
-package com.example.pst_ta5_g5;
+/*package com.example.pst_ta5_g5;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,4 +28,4 @@ public class Categoris extends AppCompatActivity {
         this.setTitle("BUSQUEDA POR CATEGORIA");
     }
 
-}
+}*/

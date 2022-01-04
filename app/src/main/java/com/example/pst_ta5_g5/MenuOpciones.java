@@ -24,7 +24,7 @@ public class MenuOpciones extends AppCompatActivity {
         startActivity(i);
     }
     public void buscarCate(View v){
-        Intent i= new Intent(getApplicationContext(), Categoris.class);
+        Intent i= new Intent(getApplicationContext(), Pulso.class);
         startActivity(i);
     }
     public void perfil(View v){
