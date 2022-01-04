@@ -11,7 +11,7 @@
         android:layout_width="417dp"
         android:layout_height="743dp"
         tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="-3dp">
+        tools:layout_editor_absoluteY="82dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,45 +20,157 @@
             android:paddingLeft="10dp"
             android:paddingRight="50dp">
 
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado de reposo:"
+                android:textColor="#68FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <EditText
-                android:id="@+id/idBuscarFic"
-                android:layout_width="256dp"
-                android:layout_height="53dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="32dp"
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Buscar libros por categoría"
-                android:inputType="textPersonName"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white" />
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text="<= 99 pulsos por Minuto"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado de descompresión: "
+                android:textColor="#1E88E5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text="100 - 118 pulsos por Minuto"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado de quema de grasa: "
+                android:textColor="#24BF12"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text="119- 138 pulsos por Minuto"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado de cardiopulmonar: "
+                android:textColor="#FDD835"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text="139 - 158 pulsos por Minuto"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado anaeróbico: "
+                android:textColor="#FB8C00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text=">=179 pulsos por Minuto"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado Límite: "
+                android:textColor="#E53935"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:text=">=179 pulsos por Minuto"
+                android:textColor="@color/white" />
 
             <ImageView
-                android:id="@+id/narn"
-                android:layout_width="170dp"
-                android:layout_height="240dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="32dp"
-                android:onClick="narnia"
-                app:srcCompat="@drawable/narnia" />
+                android:id="@+id/imageView3"
+                android:layout_width="136dp"
+                android:layout_height="84dp"
+                android:scaleType="centerInside"
+                android:textAlignment="gravity"
+                app:srcCompat="@drawable/corazon_logo" />
 
-            <ImageView
-                android:id="@+id/guerra"
-                android:layout_width="161dp"
-                android:layout_height="240dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="32dp"
-                android:onClick="guerra"
-                app:srcCompat="@drawable/guerra" />
-
-            <ImageView
-                android:id="@+id/crepusculo"
-                android:layout_width="158dp"
-                android:layout_height="240dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="32dp"
-                android:onClick="descrepusculo"
-                app:srcCompat="@drawable/crepusculo" />
+            <EditText
+                android:id="@+id/editTextTextMultiLine7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Estado de reposo     Pulsos/minuto"
+                android:textColor="@color/white" />
 
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="385dp"
+        android:layout_height="match_parent"
+        android:text="FRECUENCIA CARDIACA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="29dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
