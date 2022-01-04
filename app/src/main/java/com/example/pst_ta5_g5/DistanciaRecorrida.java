@@ -62,6 +62,7 @@ public class DistanciaRecorrida extends AppCompatActivity implements OnMapReadyC
     private Ubicacion ubicacionInicial;
     private Ubicacion ubicacionFinal;
     private int t1;
+    private double distancia;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -136,7 +137,107 @@ public class DistanciaRecorrida extends AppCompatActivity implements OnMapReadyC
         dialogBuilder.setMessage(mensaje);
         dialogBuilder.setCancelable(true).setTitle("Tiempo finalizado");
         dialogBuilder.create().show();
+        Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show();
     }
+
+    private void iniciarPorDistancia(){
+        /*   tiempo1=0;
+        new Thread() {
+            public void run() {
+                t1=Integer.parseInt(ediTiempo.getText().toString());
+                while (tiempo1<=t1) {
+                    try {
+                        runOnUiThread(new Runnable() {
+
+                            @Override
+                            public void run() {
+                                ediTiempo.setText("");
+                                ediTiempo.setEnabled(false);
+                                System.out.println("entre");
+                                pocisionInter();
+                                LatLng coordenada= new LatLng(locationIn.getLatitude(),locationIn.getLongitude());
+                                CameraUpdate miUb = CameraUpdateFactory.newLatLngZoom(coordenada,16);
+                                mMap.animateCamera(miUb);
+                                contador.setText(String.valueOf(tiempo1)+ " min");
+                                if(tiempo1>=t1){
+                                    System.out.println("entre al if");
+                                    System.out.println("entre al final");
+                                    pocisionFinal();
+                                    System.out.println("salio while"+locationf.getLatitude());
+                                    ubicacionFinal= new Ubicacion(locationf.getLatitude(),locationf.getLongitude(),locationf.getAltitude());
+                                    double distancia=Ubicacion.calcularDistancia(ubicacionInicial,ubicacionFinal);
+                                    System.out.println("Estomos así nomas de alerta");
+                                    iniciar.setText("INICIAR");
+                                    enviarAlertaDistancia("Usted ha recorrido:"+distancia+" m");
+                                    ubicacionFinal=null;
+                                    ubicacionInicial=null;
+
+
+                                }
+
+                            }
+                        });
+                        Thread.sleep(1000);
+                        tiempo1++;
+                        System.out.println("Tiempo de entrada:"+t1+"Tiempo de cronometro"+tiempo1);
+
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+            }
+        }.start();*/
+         distancia=0;
+        tiempo1=0;
+        new Thread() {
+            public void run() {
+                t1=Integer.parseInt(ediTiempo.getText().toString());
+
+                while (distancia<t1) {
+                    try {
+                        runOnUiThread(new Runnable() {
+
+                            @Override
+                            public void run() {
+
+                                ediTiempo.setText("");
+                                ediTiempo.setEnabled(false);
+                                System.out.println("entre");
+                                pocisionInter();
+                                LatLng coordenada= new LatLng(locationIn.getLatitude(),locationIn.getLongitude());
+                                CameraUpdate miUb = CameraUpdateFactory.newLatLngZoom(coordenada,16);
+                                mMap.animateCamera(miUb);
+                                contador.setText(String.valueOf(tiempo1)+ " min");
+                                System.out.println("Tiempo de entrada:"+t1+"Tiempo de cronometro"+tiempo1);
+                                System.out.println("entre al if");
+                                System.out.println("entre al final");
+                                pocisionFinal();
+                                System.out.println("salio while"+locationf.getLatitude());
+                                ubicacionFinal= new Ubicacion(locationf.getLatitude(),locationf.getLongitude(),locationf.getAltitude());
+                                distancia=(int)Ubicacion.calcularDistancia(ubicacionInicial,ubicacionFinal);
+                                System.out.println("distancia"+distancia);
+                                if(distancia==t1 || (distancia<=t1+80 && distancia>t1)){
+                                    enviarAlertaDistancia("Usted ha recorrido:"+t1+" m");
+                                    iniciar.setText("INICIAR");
+                                }
+
+                            }
+                        });
+                        Thread.sleep(1000);
+                        tiempo1++;
+
+
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            }
+        }.start();
+    }
+
     private View.OnClickListener eventoIniciar= new View.OnClickListener(){
         @Override
         public void onClick(View v) {
@@ -148,10 +249,10 @@ public class DistanciaRecorrida extends AppCompatActivity implements OnMapReadyC
                 contenedorTiempo.addView(contador);
                 pocisionInicial();
                 System.out.println(locationi.getLatitude());
-                ubicacionInicial= new Ubicacion(locationi.getLatitude(),locationi.getLongitude());
+                ubicacionInicial= new Ubicacion(locationi.getLatitude(),locationi.getLongitude(), locationi.getAltitude());
             }
             if(layout.equals("Distancia")){
-                //enviarAlertaDistancia();
+                iniciarPorDistancia();
             }
             else if(layout.equals("Tiempo")){
                    iniciarTiempo();
@@ -204,7 +305,7 @@ public class DistanciaRecorrida extends AppCompatActivity implements OnMapReadyC
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        locationf = locationManager.getLastKnownLocation(locationManager.getBestProvider(criteria, false));
+        locationf = locationManager.getLastKnownLocation(locationManager.getBestProvider(criteria, true));
     }
     public void pocisionInter() {
         LocationManager locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
@@ -212,7 +313,7 @@ public class DistanciaRecorrida extends AppCompatActivity implements OnMapReadyC
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        locationIn = locationManager.getLastKnownLocation(locationManager.getBestProvider(criteria, false));
+        locationIn = locationManager.getLastKnownLocation(locationManager.getBestProvider(criteria, true));
     }
 
     @Override
@@ -235,12 +336,11 @@ public class DistanciaRecorrida extends AppCompatActivity implements OnMapReadyC
         }
     }
     private void iniciarTiempo() {
-tiempo1=0;
+        tiempo1=0;
         new Thread() {
             public void run() {
                 t1=Integer.parseInt(ediTiempo.getText().toString());
-                while (tiempo1<t1) {
-                    tiempo1++;
+                while (tiempo1<=t1) {
                     try {
                         runOnUiThread(new Runnable() {
 
@@ -255,27 +355,38 @@ tiempo1=0;
                                 mMap.animateCamera(miUb);
                                 contador.setText(String.valueOf(tiempo1)+ " min");
                                 if(tiempo1>=t1){
+                                    System.out.println("entre al if");
                                     System.out.println("entre al final");
                                     pocisionFinal();
                                     System.out.println("salio while"+locationf.getLatitude());
-                                    ubicacionFinal= new Ubicacion(locationf.getLatitude(),locationf.getLongitude());
+                                    ubicacionFinal= new Ubicacion(locationf.getLatitude(),locationf.getLongitude(),locationf.getAltitude());
                                     double distancia=Ubicacion.calcularDistancia(ubicacionInicial,ubicacionFinal);
-                                    enviarAlertaDistancia("Usted ha recorrido:"+distancia+" m");
+                                    System.out.println("Estomos así nomas de alerta");
                                     iniciar.setText("INICIAR");
+                                    enviarAlertaDistancia("Usted ha recorrido:"+distancia+" m");
+                                    ubicacionFinal=null;
+                                    ubicacionInicial=null;
+
+
                                 }
+
                             }
                         });
-                        Thread.sleep(6000);
+                        Thread.sleep(1000);
+                        tiempo1++;
+                        System.out.println("Tiempo de entrada:"+t1+"Tiempo de cronometro"+tiempo1);
+
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+
                 }
 
             }
         }.start();
     }
 
-    // while (tiempo<Integer.parseInt(contador.getText().toString())) {
+    //while (tiempo<Integer.parseInt(contador.getText().toString())) {
     public void personalizado (View v){
         contenedor.removeAllViews();
     }

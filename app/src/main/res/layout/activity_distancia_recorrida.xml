@@ -39,19 +39,5 @@
             android:onClick="iniciarPorDistancia"
             android:text="Iniciar por distancia" />
 
-        <Button
-            android:id="@+id/btnPersonalizado"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:onClick="personalizado"
-            android:text="Personalizado" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:onClick="registros"
-            android:text="Registros" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
