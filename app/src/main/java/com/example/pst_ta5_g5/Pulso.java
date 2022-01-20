@@ -20,7 +20,7 @@ import java.util.Random;
 public class Pulso extends AppCompatActivity {
     Button Enviar;
     TextView Consola;
-    EditText TextoEnviar;
+    EditText et1;
 
     BluetoothJhr bluetoothJhr2;
 
@@ -34,7 +34,7 @@ public class Pulso extends AppCompatActivity {
         bluetoothJhr2= new BluetoothJhr(Login.class, this);
         //Enviar= (Button)findViewById(R.id.Enviar);
         Consola= (TextView)findViewById(R.id.Consola);
-        //TextoEnviar= (EditText)findViewById(R.id.TextoEnviar);
+        et1= (EditText)findViewById(R.id.et1);
 
 
        /* Enviar.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +56,10 @@ public class Pulso extends AppCompatActivity {
                             if (bluetoothJhr2.Rx()!= null && bluetoothJhr2.Rx()!= "null" && !bluetoothJhr2.Rx().equalsIgnoreCase("null") && bluetoothJhr2.Rx()!=""){
                                 String Dato = bluetoothJhr2.Rx();
                                 Consola.setText(Dato);
+                                //verEstado();
                                 bluetoothJhr2.ResetearRx();
+
+
                             }
 
                         }
@@ -66,6 +69,31 @@ public class Pulso extends AppCompatActivity {
         }).start();
 
     }
+
+    public void verEstado(){
+        String num= Consola.getText().toString();
+        int valor=Integer.parseInt(num);
+        if (valor<= 99){
+            et1.setText("ESTADO DE REPOSO");
+        }
+        else if (valor >100 && valor <=118){
+            et1.setText("ESTADO DE DESCOMPRESIÓN");
+        }
+        else if (valor >119 && valor <=138){
+            et1.setText("ESTADO DE QUEMA DE GRASA");
+        }
+        else if (valor >139 && valor <=158){
+            et1.setText("ESTADO DE CARDIOPULMONAR");
+        }
+        else if (valor >159 && valor <=178){
+            et1.setText("ESTADO DE ANAERÓBICO");
+        }
+        else{
+            et1.setText("ESTADO LÍMITE");
+        }
+
+    }
+
     @Override
     public void onResume(){
         super.onResume();
